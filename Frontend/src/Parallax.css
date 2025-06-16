@@ -1,0 +1,7 @@
+.parallax-bg {
+  background-image: url('/Frontend/public/img1.png'); /* replace with your own image path */
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
