@@ -4,12 +4,14 @@ import Home from './components/Home'
 import AdminDash from './components/AdminDash'
 import TrainerProfile from './components/TrainerProfile'
 import Navbar from './components/Navbar'
+import ScrollToTop from './components/ScrollToTop'
 
 const App = () => {
   return (
     
     <BrowserRouter>
     <Navbar/>
+    <ScrollToTop/>
     <Routes>
       <Route path="/" element={<Home />} />
       <Route path='/AdminDash' element={<AdminDash />} key='Admin' />
