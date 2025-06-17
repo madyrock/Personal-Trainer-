@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { motion } from "framer-motion";
+import TrainerProfile from "../components/TrainerProfile";
 
 
 
@@ -232,6 +233,9 @@ If you're ready to become the strongest, most mindful version of yourself, I’m
           )}
         </div>
       </div>
+
+
+      
     </section>
   );
 }

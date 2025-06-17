@@ -47,7 +47,7 @@ function Home() {
               transition={{ duration: 0.8, type: "spring" }}
               viewport={{ once: true }}
             >
-              <h2 className="font-anton text-3xl sm:text-4xl md:text-5xl font-extrabold mb-6 leading-tight uppercase">
+              <h2 className="font-anton text-4xl sm:text-4xl md:text-5xl font-extrabold mb-6  leading-tight uppercase">
                 Improve Yourself with{" "}
                 <span className="text-red-600">Elite Trainers</span>
               </h2>
@@ -57,7 +57,7 @@ function Home() {
               </p>
               <a
                 href="#hire"
-                className="inline-flex items-center justify-center gap-2 bg-red-600 text-white font-bold px-4 py-2 md:px-6 md:py-3 rounded-3xl hover:scale-105 transition-transform duration-300"
+                className="inline-flex items-center justify-center gap-2 bg-red-600 text-white font-bold mt-14 px-4 py-2 md:px-6 md:py-3 rounded-3xl hover:scale-105 transition-transform duration-300"
               >
                 <FaDumbbell /> Book a Free Session
               </a>
