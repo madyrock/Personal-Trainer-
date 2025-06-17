@@ -11,9 +11,6 @@ const PORT = 5000;
 app.use(cors());
 app.use(express.json());
 
-app.use(
-  prerender.set('prerenderToken', process.env.PRERENDER_TOKEN) // Replace with your token
-);
 
 // Multer setup for file upload
 const storage = multer.memoryStorage();
