@@ -86,7 +86,7 @@ const TrainerProfile = () => {
             <p className="mb-8">Certificate: {trainer.certificate}</p>
 
             <div className="flex flex-wrap justify-center md:justify-start gap-2 mb-8">
-              {trainer.specialty.map((specialty, index) => (
+              {trainer?.specialty?.map((specialty, index) => (
                 <span
                   key={index}
                   className="px-3 py-1 bg-red-600 rounded-full text-sm font-semibold"
@@ -118,7 +118,7 @@ const TrainerProfile = () => {
             <div className="w-full md:w-1/2">
               <div className="grid grid-cols-2 gap-6 relative">
                 {trainer.stats && Array.isArray(trainer.stats) && trainer.stats.length > 0 &&
-                  trainer.stats.map((stat, idx) => (
+                  trainer?.stats?.map((stat, idx) => (
                     <div
                       key={idx}
                       className="flex flex-col items-center text-center p-6"

@@ -8,16 +8,12 @@ import TrainerRegister from "./TrainerRegister";
 import OurTrainers from "../components/OurTrainers";
 import Services from "../components/Services";
 import ContactUs from "../components/ContactUs";
-import { Helmet } from "react-helmet";
 
 function Home() {
   return (
     <>
 
-    <Helmet>
-        <title>Elite Trainers - Book Your Personal Trainer</title>
-        <meta name="description" content="Find and book certified personal trainers for fitness, yoga, and more." />
-      </Helmet>
+    
 
       {/* Hero Section */}
 
