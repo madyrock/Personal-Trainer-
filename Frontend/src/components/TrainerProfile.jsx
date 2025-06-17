@@ -55,7 +55,7 @@ const TrainerProfile = () => {
     <>
       <section className="bg-zinc-950 min-h-screen mt-8 px-4 py-10">
         <button
-          onClick={() => navigate(-5)}
+          onClick={() => navigate(-1)}
           className="px-6 py-2 bg-red-600 text-white font-bold hover:bg-gray-600 transition-all duration-200 rounded-full mb-6"
         >
           Back
