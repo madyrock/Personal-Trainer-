@@ -3,6 +3,8 @@ import React, { useEffect, useState } from "react";
 const AdminDashboardLocalWithDocs = () => {
   const [trainers, setTrainers] = useState([]);
 
+  
+
   useEffect(() => {
     const stored = localStorage.getItem("trainers");
     if (stored) setTrainers(JSON.parse(stored));
@@ -34,9 +36,9 @@ const deleteTrainer = (id) => {
         <p className="text-center">No trainer applications found.</p>
       ) : (
         <div className="grid md:grid-cols-3 gap-4">
-          {trainers.map((trainer) => (
+          {trainers.map((trainer, index) => (
             <div
-              key={trainer.id}
+              key={trainer.id || index}
               className="bg-white rounded-lg shadow p-4"
             >
               <h2 className="text-xl font-semibold mb-2">{trainer.name}</h2>

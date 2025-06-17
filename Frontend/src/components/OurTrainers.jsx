@@ -2,6 +2,8 @@ import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { motion } from "framer-motion";
 
+
+
 function OurTrainers() {
   const [searchCity, setSearchCity] = useState("");
   const [filtered, setFiltered] = useState(null);
@@ -80,7 +82,7 @@ If you're ready to become the strongest, most mindful version of yourself, I’m
         "/niranjan1.jpg",
         "/niranjan2.jpg",
         "/niranjan3.jpg",
-        "/niranjan4.jpg",
+        "/niranjan.jpg",
        
       ],
     },
@@ -126,6 +128,7 @@ If you're ready to become the strongest, most mindful version of yourself, I’m
   return (
     <section
       id="trainers"
+      loading="lazy"
       className="py-16 w-full bg-zinc-950 text-white px-4 overflow-hidden"
     >
       <div className="max-w-6xl mx-auto">
@@ -191,7 +194,8 @@ If you're ready to become the strongest, most mindful version of yourself, I’m
               >
                 <img
                   src={trainer.image}
-                  alt={trainer.name}
+                  alt="Personal Trainer"
+                  loading="lazy"
                   className="w-full h-60 object-cover  rounded-t-xl"
                 />
                 <div className="p-4">

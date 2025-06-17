@@ -1,0 +1,13 @@
+# .gitignore
+# Frontend
+frontend/node_modules
+frontend/dist
+frontend/.env
+
+# Backend
+backend/node_modules
+backend/.env
+
+# System files
+.DS_Store
+*.log

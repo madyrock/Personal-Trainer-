@@ -1,7 +1,7 @@
 import { useLocation, useParams, useNavigate } from "react-router-dom";
 import { useEffect, useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import { Trophy } from "lucide-react";
+import { Home, Trophy } from "lucide-react";
 
 
 
@@ -55,7 +55,7 @@ const TrainerProfile = () => {
     <>
       <section className="bg-zinc-950 min-h-screen mt-8 px-4 py-10">
         <button
-          onClick={() => navigate(-1)}
+          onClick={() => navigate(-5)}
           className="px-6 py-2 bg-red-600 text-white font-bold hover:bg-gray-600 transition-all duration-200 rounded-full mb-6"
         >
           Back
