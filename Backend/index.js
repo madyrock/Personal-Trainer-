@@ -60,4 +60,4 @@ app.post('/register', upload.single('document'), async (req, res) => {
   }
 });
 
-app.listen(PORT, () => console.log(`Server running on http://localhost:${PORT}`));
+app.listen(PORT, () => console.log(`Server running on https://personal-trainer-0c0y.onrender.com:${PORT}`));
