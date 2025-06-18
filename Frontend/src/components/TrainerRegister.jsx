@@ -173,7 +173,7 @@ const TrainerRegister = () => {
               </style>
               <button
                 onClick={handleFormToggle}
-                className="md:absolute fixed right-8 cursor-pointer md:top-4 md:right-4 text-red-600"
+                className="md:absolute fixed right-8 cursor-pointer  md:top-4 md:right-4 text-red-600"
               >
                 <X size={30} />
               </button>
@@ -181,8 +181,8 @@ const TrainerRegister = () => {
               {/* Left */}
               <div className="w-full md:w-1/2 flex flex-col items-center justify-center">
                 <h1 className="text-2xl md:text-4xl uppercase text-white font-extrabold text-left">
-                  Start your career with <br />
-                  <span className="text-red-600">Elite Trainers</span>
+                  Start your career <br />with 
+                  <span className="text-red-600"> <span className="inline"> Elite Trainers</span></span>
                 </h1>
                 <img
                   className="h-[180px] md:h-[280px] mt-6"

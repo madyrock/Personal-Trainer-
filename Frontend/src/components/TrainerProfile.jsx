@@ -82,7 +82,11 @@ const TrainerProfile = () => {
             <h2 className="text-4xl md:text-6xl uppercase font-extrabold mb-8">
               {trainer.name}
             </h2>
-            <p className="mb-8 uppercase font-extrabold">{trainer.location}</p>
+            <p className="mb-8 uppercase font-extrabold "><img
+                      className="w-4 h-4 inline mx-2"
+                      src="/placeholder.png"
+                      alt="location"
+                    />{trainer.location}</p>
             <p className="mb-8">Certificate: {trainer.certificate}</p>
 
             <div className="flex flex-wrap justify-center md:justify-start gap-2 mb-8">

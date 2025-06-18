@@ -74,7 +74,8 @@ const Navbar = () => {
             className="md:hidden bg-zinc-950 py-4 font-bold uppercase text-white space-y-4 border-t border-gray-700 px-4"
           >
            <ScrollLink
-  to="home"
+           
+  to="/"
   smooth={true}
   duration={500}
   offset={-80}

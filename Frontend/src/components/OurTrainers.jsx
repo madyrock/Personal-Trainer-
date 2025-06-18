@@ -83,7 +83,7 @@ If you're ready to become the strongest, most mindful version of yourself, I’m
         "/niranjan1.jpg",
         "/niranjan2.jpg",
         "/niranjan3.jpg",
-        "/niranjan.jpg",
+        "/niranjan4.jpg",
        
       ],
     },

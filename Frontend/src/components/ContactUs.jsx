@@ -37,7 +37,7 @@ const ContactUs = () => {
   };
 
   return (
-    <section id="hire" className="bg-zinc-950 md:min-h-screen py-24 md:px-4">
+    <section id="hire" className="bg-zinc-950 md:min-h-screen min-h-screen pt-46 md:pt-0 py-24 md:px-4">
       <motion.div
         initial={{ opacity: 0, y: 40 }}
         whileInView={{ opacity: 1, y: 0 }}
