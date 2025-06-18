@@ -173,7 +173,7 @@ const TrainerRegister = () => {
               </style>
               <button
                 onClick={handleFormToggle}
-                className="md:absolute fixed right-8 cursor-pointer top-6 p-[5px] bg-white md:top-4 md:right-4 text-red-600"
+                className="md:absolute fixed right-8 cursor-pointer font-bold md:top-4 md:right-4 text-red-600"
               >
                 <X size={30} />
               </button>
