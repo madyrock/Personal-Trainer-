@@ -3,7 +3,7 @@ const router= express.Router();
 const Trainer = require('../model/trainer')
 
 
-router.post("/apply", async (req , res) => {
+router.post("/register", async (req , res) => {
 
     try {
         
