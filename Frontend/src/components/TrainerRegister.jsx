@@ -44,7 +44,7 @@ const TrainerRegister = () => {
 
     try {
       setRegistrationStatus("loading");
-      const response = await fetch("http://localhost:5000/register", {
+      const response = await fetch("https://personal-trainer-0c0y.onrender.com/register", {
         method: "POST",
         body: formData,
       });
@@ -59,8 +59,7 @@ const TrainerRegister = () => {
           email: "",
           phone: "",
           city: "",
-          certificate: "",
-          document: null,
+          
         });
       } else {
         setRegistrationStatus("error");

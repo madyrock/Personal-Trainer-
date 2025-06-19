@@ -17,7 +17,7 @@ function OurTrainers() {
       specialty: ["Strength", "Conditioning", "Weight Loss", "Pre-Competition"],
       image: "/mady.png",
       location: "Rajkot",
-      price: "from Rs.999 per session",
+      price: "Online Rs.499 per session / On-site Rs.999 per session",
       rating: 4.5,
       certificate: "ACTION | ACE | CPR | CPT",
       stats: [
@@ -41,10 +41,10 @@ function OurTrainers() {
     {
       id: 2,
       name: "Salman",
-      specialty: ["Yoga & Flexibility"],
+      specialty: ["Strength", "Conditioning", "Weight Loss"],
       image: "/salman.png",
       location: "Mumbai",
-      price: "from Rs.999 per session",
+      price: "Online Rs.499 per session / On-site Rs.999 per session",
       rating: 4.8,
       certificate: "ISSA | CPR ",
       stats: [
@@ -59,10 +59,10 @@ function OurTrainers() {
     {
       id: 3,
       name: "Niranjan",
-      specialty: ["Yoga and Flexibility"],
+      specialty: ["Yoga and Flexibility", "Conditioning", "Weight Loss"],
       image: "/niranjan.png",
       location: "Mumbai",
-      price: "from Rs.999 per session",
+      price: "Online Rs.499 per session / On-site Rs.999 per session",
       rating: 4.9,
       certificate: "K11 | YOGA | CPR | CPT",
       stats: [

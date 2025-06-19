@@ -3,33 +3,40 @@ const express = require('express');
 const multer = require('multer');
 const cors = require('cors');
 const nodemailer = require('nodemailer');
-const prerender = require('prerender-node');
+const connectDB = require("./config/db");
+
 const app = express();
 const PORT = 5000;
+
+// Connect to MongoDB
+connectDB();
 
 // Middleware
 app.use(cors());
 app.use(express.json());
 
-
-// Multer setup for file upload
+// Multer for file upload (memory)
 const storage = multer.memoryStorage();
-const upload = multer({ storage: storage });
+const upload = multer({ storage });
 
-// POST route to handle trainer registration
+// 💡 Import routes (outside of any function)
+const trainerRoutes = require("./routes/trainers");
+app.use("/api/trainers", trainerRoutes);
+
+// POST route to handle trainer registration + document + email
 app.post('/register', upload.single('document'), async (req, res) => {
   try {
     const { name, email, phone, city } = req.body;
-    console.log(req.body);
     const documentFile = req.file;
 
-    console.log(req.file);
+    console.log("BODY:", req.body);
+    console.log("FILE:", req.file);
 
     if (!name || !email || !phone || !city || !documentFile) {
       return res.status(400).json({ success: false, error: 'Missing required fields' });
     }
 
-    // Optional: send email notification
+    // Setup email
     const transporter = nodemailer.createTransport({
       service: 'gmail',
       auth: {
@@ -60,4 +67,4 @@ app.post('/register', upload.single('document'), async (req, res) => {
   }
 });
 
-app.listen(PORT, () => console.log(`Server running on https://personal-trainer-0c0y.onrender.com:${PORT}`));
+app.listen(PORT, () => console.log(`🚀 Server running at https://personal-trainer-0c0y.onrender.com:${PORT}`));

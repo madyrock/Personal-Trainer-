@@ -145,13 +145,18 @@ function Home() {
         <Services />
       </section>
 
-      <section id="career">
-        <TrainerRegister />
-      </section>
+      {/* Pricing */}
+
+      
 
       <section id="testimonials">
         <TestimonialSection />
       </section>
+
+      <section id="career">
+        <TrainerRegister />
+      </section>
+
 
       <section id="contact">
         <ContactUs />

@@ -169,6 +169,8 @@ const TrainerProfile = () => {
             {trainer.desc}
           </p>
         </div>
+
+        
       </section>
 
       <footer className="bg-black py-6 text-center text-white uppercase font-extrabold">
