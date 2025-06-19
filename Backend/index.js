@@ -20,8 +20,7 @@ const storage = multer.memoryStorage();
 const upload = multer({ storage });
 
 // 💡 Import routes (outside of any function)
-const trainerRoutes = require("./routes/trainers");
-app.use("/api/trainers", trainerRoutes);
+
 
 // POST route to handle trainer registration + document + email
 app.post('/register', upload.single('document'), async (req, res) => {
