@@ -15,8 +15,10 @@ router.post("/register", async (req , res) => {
           phone: req.body.phone,
           city: req.body.city,
         });
-        
+        console.log("Incoming trainer:", req.body);
         await newTrainer.save();
+        console.log("Saved trainer:", trainer);
+
         res.status(200).json( {message: "Trainer application submitted"})
 
     } catch (error) {
