@@ -47,7 +47,7 @@ function Home() {
                 Improve Yourself with{" "}
                 <span className="text-red-600">Elite Trainers</span>
               </h2>
-              <p className="text-white italic text-base md:text-lg mb-6">
+              <p className="text-white italic  text-base md:text-lg mb-6">
                 Browse through certified personal trainers and book the best fit
                 for you.
               </p>
