@@ -55,7 +55,7 @@ const Navbar = () => {
               Career
             </Link>
             <Link
-              to="/hire"
+              to="/contact"
               className="hover:text-red-600 transition duration-300"
             >
               Contact Us
@@ -112,7 +112,7 @@ const Navbar = () => {
               Career
             </Link>
             <Link
-              to="hire"
+              to="contact"
               smooth={true}
               duration={500}
               offset={-80}
