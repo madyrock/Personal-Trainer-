@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { motion } from "framer-motion";
 import TrainerProfile from "../components/TrainerProfile";
+import { Helmet } from "react-helmet";
 
 
 
@@ -127,6 +128,15 @@ If you're ready to become the strongest, most mindful version of yourself, I’m
   const trainersToShow = filtered === null ? trainers : filtered;
 
   return (
+    <>
+
+    <Helmet>
+        <title>Our Trainers | Elite Trainers</title>
+        <meta name="description" content="Browse our team of certified personal trainers available for online and onsite sessions. Choose the right expert to guide your fitness journey." />
+        <meta property="og:title" content="Our Trainers | Elite Trainers" />
+        <meta property="og:description" content="Meet our professional trainers and find your perfect fitness coach today." />
+      </Helmet>
+    
     <section
       id="trainers"
       loading="lazy"
@@ -243,6 +253,7 @@ If you're ready to become the strongest, most mindful version of yourself, I’m
 
       
     </section>
+    </>
   );
 }
 

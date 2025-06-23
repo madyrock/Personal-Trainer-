@@ -2,6 +2,7 @@
 import React, { useState } from "react";
 import { X } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
+import { Helmet } from "react-helmet";
 
 const TrainerRegister = () => {
   const [formVisible, setFormVisible] = useState(false);
@@ -76,6 +77,15 @@ const TrainerRegister = () => {
   };
 
   return (
+    <>
+
+    <Helmet>
+        <title>Careers | Join Elite Trainers</title>
+        <meta name="description" content="Looking to grow your career as a personal trainer? Join Elite Trainers and work with clients worldwide through online or onsite sessions." />
+        <meta property="og:title" content="Careers | Join Elite Trainers" />
+        <meta property="og:description" content="Become part of the Elite Trainers team and advance your fitness career." />
+      </Helmet>
+    
     <section id="career" className=" bg-zinc-950 py-16 p-14">
       <div className="max-w-6xl mx-auto">
         <h3 className="uppercase text-white font-extrabold mb-8 text-3xl md:text-5xl text-center md:text-left">
@@ -351,6 +361,7 @@ const TrainerRegister = () => {
         ; export default TrainerRules;
       </AnimatePresence>
     </section>
+    </>
   );
 };
 

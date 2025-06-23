@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { FaEnvelope } from "react-icons/fa";
 import { motion } from "framer-motion";
 import emailjs from "emailjs-com"; // ✅ Import emailjs
+import { Helmet } from "react-helmet";
 
 const ContactUs = () => {
   const [form, setForm] = useState({
@@ -37,6 +38,14 @@ const ContactUs = () => {
   };
 
   return (
+      <>
+      <Helmet>
+        <title>Contact Us | Elite Trainers</title>
+        <meta name="description" content="Have questions? Contact Elite Trainers for assistance with bookings, inquiries, or joining our platform." />
+        <meta property="og:title" content="Contact Us | Elite Trainers" />
+        <meta property="og:description" content="Get in touch with Elite Trainers and start your fitness journey today." />
+      </Helmet>
+
     <section
       id="hire"
       className="bg-zinc-950   pt-26 md:pt-0 py-24 md:px-4"
@@ -103,6 +112,7 @@ const ContactUs = () => {
         </motion.form>
       </motion.div>
     </section>
+    </>
   );
 };
 
