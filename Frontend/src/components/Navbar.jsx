@@ -2,7 +2,6 @@ import React, { useState, useEffect } from "react";
 import { Menu, X } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
 import { Link } from "react-router-dom";
-import { Link as ScrollLink } from "react-scroll";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -43,24 +42,24 @@ const Navbar = () => {
             <Link to="/" className="hover:text-red-600 transition duration-300">
               Home
             </Link>
-            <a
-              href="#trainers"
+            <Link
+              to="/trainers"
               className="hover:text-red-600 transition duration-300"
             >
               Our Trainers
-            </a>
-            <a
-              href="#career"
+            </Link>
+            <Link
+              to="/career"
               className="hover:text-red-600 transition duration-300"
             >
               Career
-            </a>
-            <a
-              href="#hire"
+            </Link>
+            <Link
+              to="/hire"
               className="hover:text-red-600 transition duration-300"
             >
               Contact Us
-            </a>
+            </Link>
           </div>
 
           {/* Mobile Menu Button */}
@@ -81,8 +80,8 @@ const Navbar = () => {
             exit={{ height: 0, opacity: 0 }}
             className="md:hidden bg-zinc-950 py-4 font-bold uppercase text-white space-y-4 border-t border-gray-700 px-4"
           >
-            <ScrollLink
-              to="home"
+            <Link
+              to="/"
               smooth={true}
               duration={500}
               offset={-80}
@@ -90,9 +89,9 @@ const Navbar = () => {
               className="block cursor-pointer hover:text-red-600"
             >
               Home
-            </ScrollLink>
+            </Link>
 
-            <ScrollLink
+            <Link
               to="trainers"
               smooth={true}
               duration={500}
@@ -101,8 +100,8 @@ const Navbar = () => {
               className="block cursor-pointer hover:text-red-600"
             >
               Our Trainers
-            </ScrollLink>
-            <ScrollLink
+            </Link>
+            <Link
               to="career"
               smooth={true}
               duration={500}
@@ -111,8 +110,8 @@ const Navbar = () => {
               className="block cursor-pointer hover:text-red-600"
             >
               Career
-            </ScrollLink>
-            <ScrollLink
+            </Link>
+            <Link
               to="hire"
               smooth={true}
               duration={500}
@@ -121,7 +120,7 @@ const Navbar = () => {
               className="block cursor-pointer hover:text-red-600"
             >
               Contact Us
-            </ScrollLink>
+            </Link>
           </motion.div>
         )}
       </AnimatePresence>

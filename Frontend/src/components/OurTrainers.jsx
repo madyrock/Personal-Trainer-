@@ -253,6 +253,8 @@ If you're ready to become the strongest, most mindful version of yourself, I’m
 
       
     </section>
+
+    
     </>
   );
 }
