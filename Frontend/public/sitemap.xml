@@ -6,23 +6,23 @@
     <priority>1.00</priority>
   </url>
   <url>
-    <loc>https://elitetrainers.in/#trainers</loc>
+    <loc>https://elitetrainers.in/trainers</loc>
     <priority>0.80</priority>
   </url>
   <url>
-    <loc>https://elitetrainers.in/#services</loc>
+    <loc>https://elitetrainers.in/services</loc>
     <priority>0.80</priority>
   </url>
   <url>
-    <loc>https://elitetrainers.in/#testimonials</loc>
+    <loc>https://elitetrainers.in/testimonials</loc>
     <priority>0.70</priority>
   </url>
   <url>
-    <loc>https://elitetrainers.in/#career</loc>
+    <loc>https://elitetrainers.in/career</loc>
     <priority>0.70</priority>
   </url>
   <url>
-    <loc>https://elitetrainers.in/#contact</loc>
+    <loc>https://elitetrainers.in/contact</loc>
     <priority>0.80</priority>
   </url>
 </urlset>
