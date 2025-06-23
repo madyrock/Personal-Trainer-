@@ -23,15 +23,15 @@ function Home() {
         {/* Open Graph */}
         <meta property="og:title" content="Hire Certified Personal Trainers | Elite Trainers" />
         <meta property="og:description" content="Discover top personal trainers for both online and onsite sessions. Book today!" />
-        <meta property="og:image" content="https://yourdomain.in/og-image.jpg" />
-        <meta property="og:url" content="https://yourdomain.in" />
+        <meta property="og:image" content="https://elitetrainers.in/og-image.jpg" />
+        <meta property="og:url" content="https://elitetrainers.in" />
         <meta property="og:type" content="website" />
 
         {/* Twitter */}
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content="Hire Certified Personal Trainers | Elite Trainers" />
         <meta name="twitter:description" content="Connect with top personal trainers for online or onsite fitness programs. Book now!" />
-        <meta name="twitter:image" content="https://yourdomain.in/og-image.jpg" />
+        <meta name="twitter:image" content="https://elitetrainers.in/og-image.jpg" />
       </Helmet>
 
       {/* Hero Section */}
