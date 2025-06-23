@@ -13,7 +13,7 @@ function OurTrainers() {
   const trainers = [
     {
       id: 1,
-      name: "Mudassir Ghazi",
+      name: "Maddy",
       specialty: ["Strength", "Conditioning", "Weight Loss", "Pre-Competition"],
       image: "/mady.png",
       location: "Rajkot",
@@ -26,8 +26,8 @@ function OurTrainers() {
         { value: "100+", label: "Happy Customer with Reference" },
         { value: 90, label: "Day of a new Superfast Program" },
       ],
-      bio: "I’m a certified personal trainer passionate about transforming lives through online fitness coaching. I focus on real results, personalized plans, and your satisfaction—because your journey is personal to me.",
-      desc: "With 17 years of elite experience in the fitness industry, I specialize in transformative results through evidence-based training programs. From coaching celebrities to guiding everyday individuals, my approach is rooted in discipline, customization, and guaranteed outcomes. I offer expert prep-coaching for competitions, rapid body transformations within months, and highly effective pre- and post-natal exercise programs designed for safety and strength. Whether your goal is fat loss, strength building, or professional bodybuilding, every session is tailored to your unique journey — because results aren’t optional, they’re guaranteed.",
+      bio: "I’m a certified personal trainer passionate about transforming lives through online fitness coaching. I focus on real results, personalized plans, and your satisfaction because your journey is personal to me.",
+      desc: "With 17 years of elite experience in the fitness industry, I specialize in transformative results through evidence-based training programs. From coaching celebrities to guiding everyday individuals, my approach is rooted in discipline, customization, and guaranteed outcomes. I offer expert prep-coaching for competitions, rapid body transformations within months, and highly effective pre- and post-natal exercise programs designed for safety and strength. Whether your goal is fat loss, strength building, or professional bodybuilding, every session is tailored to your unique journey because results aren’t optional, they’re guaranteed.",
       images: [
         "/img1.png",
         "/img2.png",
@@ -163,17 +163,19 @@ If you're ready to become the strongest, most mindful version of yourself, I’m
           />
           <button
             onClick={handleFilter}
-            className="px-4 py-2 bg-red-600 text-white rounded hover:bg-red-700 transition"
+            className="px-4 py-2 bg-red-600 text-white rounded font-bold hover:bg-red-700 transition active:bg-white active:text-red-600 active:border active:border-red-600"
           >
             Filter
           </button>
           <button
             onClick={handleShowAll}
-            className="px-4 py-2 bg-gray-400 text-black rounded hover:bg-gray-500 transition"
+            className="px-4 py-2 bg-transparent border border-red-600 text-white font-bold rounded active:bg-white active:text-red-600 transition"
           >
             Show All
           </button>
         </div>
+
+        <p className="text-2xl uppercase font-extrabold text-center mb-6">Choose your trainer</p>
 
         {/* Trainers Grid */}
         <div className=" grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -186,13 +188,16 @@ If you're ready to become the strongest, most mindful version of yourself, I’m
               <motion.div
                 key={trainer.id}
                 className="bg-zinc-900 border border-gray-600 rounded-xl shadow-lg  hover:scale-105 transition cursor-pointer 
-              w-full sm:w-full  max-w-[350px] mx-auto"
+              w-full sm:w-full  max-w-[350px] mx-auto relative"
                 initial={{ opacity: 0, y: 50 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.4, delay: i * 0.1 }}
                 viewport={{ once: true }}
                 onClick={() => handleTrainerClick(trainer)}
               >
+                <button className="absolute top-2 left-2 text-sm font-bold px-4 py-2 bg-transparent border-2 border-red-600 active:text-red-600 hover:active:bg-white  text-white rounded  transition">
+                      View
+                    </button>
                 <img
                   src={trainer.image}
                   alt="Personal Trainer"
@@ -210,6 +215,7 @@ If you're ready to become the strongest, most mindful version of yourself, I’m
                   )}
                   <p className="text-red-600 font-bold mb-2">{trainer.price}</p>
                   <div className="flex items-center gap-2 mb-3">
+                    
                     <img
                       className="w-4 h-4"
                       src="/placeholder.png"

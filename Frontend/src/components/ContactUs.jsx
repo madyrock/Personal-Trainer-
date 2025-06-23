@@ -37,7 +37,10 @@ const ContactUs = () => {
   };
 
   return (
-    <section id="hire" className="bg-zinc-950 md:min-h-screen min-h-screen pt-46 md:pt-0 py-24 md:px-4">
+    <section
+      id="hire"
+      className="bg-zinc-950   pt-26 md:pt-0 py-24 md:px-4"
+    >
       <motion.div
         initial={{ opacity: 0, y: 40 }}
         whileInView={{ opacity: 1, y: 0 }}
@@ -48,6 +51,13 @@ const ContactUs = () => {
         <h3 className="text-3xl md:text-5xl font-extrabold mb-6 text-center text-white uppercase">
           Get in <span className="text-red-600">Touch</span>
         </h3>
+
+        <p className="font-bold italic text-white my-5 px-4 text-center md:text-left">
+          Need Help Finding the Right Trainer? We’re here to assist! Whether you
+          have questions about our trainers, booking process, or need support,
+          feel free to reach out. Our team will get back to you as soon as
+          possible to ensure you have a smooth experience.
+        </p>
 
         <motion.form
           onSubmit={handleSubmit}
