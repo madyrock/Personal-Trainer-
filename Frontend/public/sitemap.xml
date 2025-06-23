@@ -1,34 +1,28 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="https://www.sitemaps.org/schemas/sitemap/0.9">
-
   <url>
     <loc>https://elitetrainers.in/</loc>
+    <lastmod>2024-06-21</lastmod>
     <priority>1.00</priority>
   </url>
-
   <url>
     <loc>https://elitetrainers.in/#trainers</loc>
     <priority>0.80</priority>
   </url>
-
   <url>
     <loc>https://elitetrainers.in/#services</loc>
     <priority>0.80</priority>
   </url>
-
   <url>
     <loc>https://elitetrainers.in/#testimonials</loc>
     <priority>0.70</priority>
   </url>
-
   <url>
     <loc>https://elitetrainers.in/#career</loc>
     <priority>0.70</priority>
   </url>
-
   <url>
     <loc>https://elitetrainers.in/#contact</loc>
     <priority>0.80</priority>
   </url>
-
 </urlset>
