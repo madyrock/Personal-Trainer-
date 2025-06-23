@@ -5,6 +5,10 @@ import AdminDash from './components/AdminDash'
 import TrainerProfile from './components/TrainerProfile'
 import Navbar from './components/Navbar'
 import ScrollToTop from './components/ScrollToTop'
+import OurTrainers from './components/OurTrainers'
+import Services from './components/Services'
+import TestimonialSection from './components/Testimonial'
+import TrainerRegister from './components/TrainerRegister'
 
 const App = () => {
   return (
@@ -14,6 +18,10 @@ const App = () => {
     <ScrollToTop/>
     <Routes>
       <Route path="/" element={<Home />} />
+      <Route path="/trainers" element={<OurTrainers />} />
+      <Route path="/services" element={<Services />} />
+      <Route path="/testimonial" element={<TestimonialSection />} />
+      <Route path="/trainerRegister" element={<TrainerRegister />} />
       <Route path='/AdminDash' element={<AdminDash />} key='Admin' />
       <Route path='/trainer/:id' element={<TrainerProfile />}  />
     </Routes>
