@@ -17,7 +17,7 @@ function OurTrainers() {
       name: "Maddy",
       specialty: ["Strength", "Conditioning", "Weight Loss", "Pre-Competition"],
       image: "/mady.png",
-      location: "Rajkot",
+      location: "Mumbai",
       price: "Online Rs.499 per session / On-site Rs.999 per session",
       rating: 4.5,
       certificate: "ACTION | ACE | CPR | CPT",
