@@ -214,7 +214,7 @@ const TrainerRegister = () => {
                     transition={{ duration: 0.4 }}
                   >
                     {registrationStatus === "success"
-                      ? "Registration successful!"
+                      ? "Form Submitted! You Will Be Notified Shortly"
                       : registrationStatus}
                   </motion.p>
                 )}
