@@ -173,9 +173,7 @@ const TrainerProfile = () => {
         
       </section>
 
-      <footer className="bg-black py-6 text-center text-white uppercase font-extrabold">
-        &copy; 2023 EliteTrainers. All rights reserved.
-      </footer>
+     
     </>
   );
 };
