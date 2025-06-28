@@ -68,7 +68,7 @@ const TrainerProfile = () => {
           transition={{ duration: 0.6 }}
         >
           <motion.div
-            className="max-w-6xl w-full md:w-[40%] relative h-[300px] md:h-[450px] rounded-3xl overflow-hidden"
+            className="max-w-6xl w-full md:w-[40%] relative h-[350px] md:h-[450px] rounded-3xl overflow-hidden"
             whileHover={{ scale: 1.02 }}
           >
             <img
