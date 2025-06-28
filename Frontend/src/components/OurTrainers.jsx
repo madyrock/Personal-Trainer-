@@ -90,7 +90,7 @@ If you're ready to become the strongest, most mindful version of yourself, I’m
       id: 4,
       name: "Rafiq",
       specialty: ["Strength", "Rehabilitation", "Conditioning", "Weight Loss"],
-      image: "/rafiq.jpg",
+      image: "/rafiq.png",
       location: "Ahamedabad",
       price: "Online Rs.499 per session / On-site Rs.999 per session",
       rating: 4.9,
@@ -224,7 +224,7 @@ With over two decades of hands-on experience, I specialize in bodybuilding, stre
                     src={trainer.image}
                     alt="Personal Trainer"
                     loading="lazy"
-                    className="w-full h-60 object-cover  rounded-t-xl"
+                    className="w-full h-80 object-cover  rounded-t-xl"
                   />
                   <div className="p-4">
                     <h4 className="text-xl uppercase font-bold mb-2">
